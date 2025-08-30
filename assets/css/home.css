@@ -52,17 +52,17 @@ button > a:hover{
 
 
 a {
-    color:var(--blue-light);
+    color:var(--dark-b);
   }
 
   a:hover {
-    color: var(--blue-medium) ;
+    color: var(--dark-b) ;
     text-decoration: none !important;
     /* font-size:1.3rem !important; */
   }
   
   .fa-fw{
-    color: var(--blue-medium) ;
+    color: var(--dark-b) ;
   }
 
   .social-icons {
@@ -74,7 +74,7 @@ a {
     font-weight: 600; 
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--blue-medium);
+    color:var(--dark-b);
 }
 
 /* .pl-5{
