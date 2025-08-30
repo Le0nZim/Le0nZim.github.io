@@ -25,7 +25,7 @@ h4,h5, p, ul>li, .btn-blue{
 
 .btn-blue{
     color: var(--gray-black) !important;
-    background-color: var(--white-ish);
+    background-color: var(--gray-black);
     border: 2px solid var(--gray-black);
 }  
 
@@ -37,7 +37,7 @@ h4,h5, p, ul>li, .btn-blue{
 
 button:hover{
     font-size:1.0001rem ;
-    background-color: var(--white-ish);
+    background-color: var(--gray-black);
     /* color: var(--white-ish) !important; */
 }
 
