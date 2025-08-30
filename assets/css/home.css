@@ -77,6 +77,63 @@ a {
     color:var(--dark-b);
 }
 
+/* ===== HEADER / NAV (force black even when idle) ===== */
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link,
+.navbar .btn,
+.navbar button {
+  color: #000 !important;
+  background: #000 !important;             /* for <button>/<btn> look */
+  border-color: #000 !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover,
+.navbar .btn:hover,
+.navbar button:hover {
+  color: #000 !important;
+  background: #000 !important;
+  text-decoration: none !important;
+}
+
+/* Hamburger/toggler */
+.navbar-dark .navbar-toggler {
+  border-color: #000 !important;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: none !important;
+}
+.navbar-dark .navbar-toggler-icon::before {
+  content: "≡";
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #000;
+}
+
+/* ===== FOOTER (black bar) ===== */
+footer, .site-footer, #footer {
+  background: #000 !important;
+  color: var(--white-ish) !important;        /* keep text readable */
+}
+footer a { color: var(--white-ish) !important; }
+
+/* ===== ICON / AVATAR RING (black detail) ===== */
+/* applies a black ring around common avatar/headshot classes */
+.profile-image, .profile-img, .avatar, .headshot, .rounded-circle {
+  border: 6px solid #000 !important;
+  border-radius: 50%;
+}
+
+svg.icon path, svg.icon circle, svg.icon rect {
+  fill: #000 !important;
+  stroke: #000 !important;
+}
+
+/* (optional) variables – make the “footer color” token black too */
+:root {
+  --blue-dark: #000000;   /* if your footer uses this token */
+}
+
 /* .pl-5{
 	padding-left: 100px !important;
 } */
