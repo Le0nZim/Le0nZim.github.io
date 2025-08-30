@@ -4,134 +4,72 @@
 
 :root {
   /* --primary-colors --*/
-  --white-ish:#f5f5dc;
-  --light-gray: #f5f5dc;
-  --blue-light:#000000;
-  --blue-medium: #000000;
-  --blue-dark:#f5f5dc;
-  --dark-b: #000000;
-  --gray-black: #000000;
-  --darker-b:#000000;
+  --white-ish:#F9F7F7;
+  --light-gray: #DBE2EF;
+  --blue-light:#669bbc;
+  --blue-medium: #0077b6;
+  --blue-dark:rgb(15, 76, 117);
+  --dark-b: #003566;
+  --gray-black: #415a77;
+  --darker-b:#1B262C;
 
   /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
 }
-
-
-h4,h5, p, ul>li, .btn-blue{
-    font-family: 'Ubuntu Sans', sans-serif;
-}
-
+@@ -24,59 +24,59 @@
 /* body > div > ol:nth-child(7) > li > button > a */
 
 .btn-blue{
-    color: var(--gray-black) !important;
-    background-color: var(--gray-black);
-    border: 2px solid var(--gray-black);
+    color: var(--white-ish) !important;
+    background-color: var(--blue-light);
+	border: 2px solid var(--blue-medium);
 }  
 
 .btn-blue > a{
-    color: var(--gray-black);
+    color: var(--white-ish);
     /* background-color: var(--blue-medium); */
-    border-color: var(--gray-black);
+    border-color: var(--light-gray);
 }
 
 button:hover{
     font-size:1.0001rem ;
-    background-color: var(--gray-black);
+    background-color: var(--blue-medium);
     /* color: var(--white-ish) !important; */
 }
 
 button > a {
-    color: var(--gray-black) !important;
+    color: var(--white-ish) !important; 
 }
 
 button > a:hover{
-    color: var(--gray-black) !important;
+    color: var(--white-ish) !important;
     text-decoration: none;
 }
 
 
 a {
-    color:var(--dark-b);
+    color:var(--blue-light);
   }
 
   a:hover {
-    color: var(--dark-b) ;
+    color: var(--blue-medium) ;
     text-decoration: none !important;
     /* font-size:1.3rem !important; */
   }
-  
+
   .fa-fw{
-    color: var(--dark-b) ;
+    color: var(--blue-medium) ;
   }
 
   .social-icons {
     list-style-type: none;
   }
-  
+
 
 .ref-journal{
     font-weight: 600; 
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--dark-b);
-}
-
-/* ===== HEADER / NAV (force black even when idle) ===== */
-.navbar-dark .navbar-brand,
-.navbar-dark .navbar-nav .nav-link,
-.navbar .btn,
-.navbar button {
-  color: #000 !important;
-  background: #000 !important;             /* for <button>/<btn> look */
-  border-color: #000 !important;
-}
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-brand:hover,
-.navbar .btn:hover,
-.navbar button:hover {
-  color: #000 !important;
-  background: #000 !important;
-  text-decoration: none !important;
-}
-
-/* Hamburger/toggler */
-.navbar-dark .navbar-toggler {
-  border-color: #000 !important;
-}
-.navbar-dark .navbar-toggler-icon {
-  background-image: none !important;
-}
-.navbar-dark .navbar-toggler-icon::before {
-  content: "≡";
-  display: inline-block;
-  font-size: 1.4rem;
-  line-height: 1;
-  color: #000;
-}
-
-/* ===== FOOTER (black bar) ===== */
-footer, .site-footer, #footer {
-  background: #000 !important;
-  color: var(--white-ish) !important;        /* keep text readable */
-}
-footer a { color: var(--white-ish) !important; }
-
-/* ===== ICON / AVATAR RING (black detail) ===== */
-/* applies a black ring around common avatar/headshot classes */
-.profile-image, .profile-img, .avatar, .headshot, .rounded-circle {
-  border: 6px solid #000 !important;
-  border-radius: 50%;
-}
-
-svg.icon path, svg.icon circle, svg.icon rect {
-  fill: #000 !important;
-  stroke: #000 !important;
-}
-
-/* (optional) variables – make the “footer color” token black too */
-:root {
-  --blue-dark: #000000;   /* if your footer uses this token */
+    color:var(--blue-medium);
 }
 
 /* .pl-5{
